@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="section sec1 header active" id="home">
+      <div class="header-content">
+        <div class="left-header">
+          <div class="h-shape"></div>
+          <div class="image">
+            <img src="img/DSCN1105.JPG" alt="Profile Image" />
+          </div>
+        </div>
+        <div class="right-header">
+          <h1 class="name">hi im <span>Connor Vincent-Eidelman</span></h1>
+          <p>
+            I am a <span>Software Engineer</span> based in
+            <span>New York</span>. I like to code lol.
+          </p>
+          <div class="btn-container">
+            <a href="" class="main-btn">
+              <span class="btn-text">Download CV</span>
+              <span class="btn-icon">
+                <i class="fa-solid fa-download"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section sec2 about" id="about"></section>
+      <section class="section sec3 portfolio" id="portfolio"></section>
+      <section class="section sec4 contact" id="contact"></section>
+    </main>
+    <div class="controls">
+      <div class="control control-1 active-btn" data-id="home">
+        <i class="fa-solid fa-house"></i>
+      </div>
+      <div class="control control-2" data-id="about">
+        <i class="fa-solid fa-user"></i>
+      </div>
+      <div class="control control-3" data-id="portfolio">
+        <i class="fa-solid fa-briefcase"></i>
+      </div>
+      <div class="control control-4">
+        <i class="fa-solid fa-newspaper"></i>
+      </div>
+
+      <div class="control control-5" data-id="contact">
+        <i class="fa-solid fa-envelope-open"></i>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
