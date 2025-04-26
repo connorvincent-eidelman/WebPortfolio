@@ -189,4 +189,27 @@ section {
   color: var(--color-black);
   text-align: left;
   transition: all 0.4s ease-in-out;
+}
+
+.main-btn {
+  border-radius: 30px;
+  color: inherit;
+  font-weight: 600;
+  position: relative;
+  border: 1px solid var(--secondary-color);
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  overflow: hidden;
+}
+.main-btn .btn-text {
+  padding: 0 2rem;
+}
+.main-btn .btn-icon {
+  background-color: var(--secondary-color);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 50%;
+  padding: 0.25rem;
 }/*# sourceMappingURL=style.css.map */
