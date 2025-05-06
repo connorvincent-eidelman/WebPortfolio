@@ -599,6 +599,18 @@ section {
   transition: all 0.4s ease-in-out;
 }
 
+.contact-content-con {
+  display: flex;
+  padding-top: 3rem;
+}
+.contact-content-con .left-contact {
+  flex: 2;
+}
+.contact-content-con .right-contact {
+  flex: 1;
+  margin-left: 2rem;
+}
+
 .main-title {
   text-align: center;
 }

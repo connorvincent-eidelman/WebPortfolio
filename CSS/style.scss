@@ -611,6 +611,22 @@ section {
     }
   }
 }
+
+//contact
+.contact-content-con{
+  display: flex;
+  padding-top: 3rem;
+  .left-contact{
+    flex: 2;
+
+  }
+  .right-contact{
+    flex: 1;
+    margin-left: 2rem;
+  }
+}
+
+
 //reuse
 .main-title {
   text-align: center;
