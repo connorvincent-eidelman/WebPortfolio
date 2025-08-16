@@ -54,4 +54,19 @@ function PageTransitions() {
     });
 }
 
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+  e.preventDefault(); // stop normal form submit
+  const formMessage = document.getElementById("form-message");
+
+  emailjs.sendForm("service_34i2irr", "template_harhkoi", this, "Rdwvcw20k9MUhXoj-")
+    .then(() => {
+      formMessage.textContent = "✅ Message sent successfully!";
+      formMessage.style.color = "limegreen";
+      this.reset();
+    }, (err) => {
+      formMessage.textContent = "❌ Failed to send message. Please try again.";
+      formMessage.style.color = "red";
+      console.error("EmailJS error:", err);
+    });
+});
 PageTransitions();

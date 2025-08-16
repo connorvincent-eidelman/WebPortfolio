@@ -19,6 +19,12 @@
       rel="stylesheet"
     />
   </head>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("Rdwvcw20k9MUhXoj-"); // 🔑 Replace with your actual public key
+    })();
+  </script>
   <body>
     <header class="section sec1 header active" id="home">
       <div class="header-content">
@@ -219,7 +225,10 @@
             <div class="hover-item">
               <h3>Project Source</h3>
               <div class="icons">
-                <a href="#" class="icon">
+                <a
+                  href="https://github.com/connorvincent-eidelman/spinevis"
+                  class="icon"
+                >
                   <i class="fa-brands fa-github"></i>
                 </a>
               </div>
@@ -287,30 +296,30 @@
                 <div class="contact-item">
                   <div class="icon">
                     <i class="fa-solid fa-location-dot"></i>
-                    <span>Location</span>
+                    <span>Location:</span>
                   </div>
-                  <p>: New York, NY</p>
+                  <span class="value">New York, NY</span>
                 </div>
                 <div class="contact-item">
                   <div class="icon">
-                    <i class="fa-envelope-open"></i>
-                    <span>Email</span>
+                    <i class="fa-solid fa-envelope-open"></i>
+                    <span>Email:</span>
                   </div>
-                  <p>: cvine630@gmail.com</p>
+                  <p>cvine630@gmail.com</p>
                 </div>
                 <div class="contact-item">
                   <div class="icon">
                     <i class="fa-solid fa-phone"></i>
-                    <span>Phone</span>
+                    <span>Phone:</span>
                   </div>
-                  <p>: 917-825-4495</p>
+                  <p>917-825-4495</p>
                 </div>
                 <div class="contact-item">
                   <div class="icon">
                     <i class="fa-solid fa-graduation-cap"></i>
-                    <span>Education</span>
+                    <span>Education:</span>
                   </div>
-                  <p>: Undergraduate at Brandeis University</p>
+                  <p>Undergraduate at Brandeis University</p>
                 </div>
                 <div class="contact-icons">
                   <div class="contact-icon">
@@ -322,30 +331,47 @@
               </div>
             </div>
             <div class="right-contact">
-              <form action="" class="contact-form">
+              <form id="contact-form" class="contact-form">
                 <div class="input-control i-c-2">
-                  <input type="text" required placeholder="name" />
-                  <input type="email" required placeholder="your email" />
+                  <input
+                    type="text"
+                    name="from_name"
+                    required
+                    placeholder="Name"
+                  />
+                  <input
+                    type="email"
+                    name="reply_to"
+                    required
+                    placeholder="Your Email"
+                  />
                 </div>
                 <div class="input-control">
-                  <input type="text" required placeholder="subject" />
+                  <input
+                    type="text"
+                    name="subject"
+                    required
+                    placeholder="Subject"
+                  />
                 </div>
                 <div class="input-control">
-                  <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
+                  <textarea
+                    name="message"
+                    cols="15"
+                    rows="8"
+                    required
+                    placeholder="Message Here..."
+                  ></textarea>
+                </div>
+                <div class="submit-btn">
+                  <button type="submit" class="main-btn">
+                    <span class="btn-text">Send Message</span>
+                    <span class="btn-icon">
+                      <i class="fa-solid fa-paper-plane"></i>
+                    </span>
+                  </button>
                 </div>
               </form>
-              <div class="submit-btn">
-                <a href="#" class="main-btn">
-                  <span class="btn-text">Download CV</span>
-                  <span class="btn-icon">
-                    <i class="fa-solid fa-download"></i>
-                  </span>
-                </a>
-
-              </div>
-
-
-              
             </div>
           </div>
         </div>

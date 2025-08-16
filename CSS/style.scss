@@ -36,7 +36,6 @@ header {
   min-height: 100vh;
   color: var(--color-white);
   overflow: hidden;
-  
 }
 
 section {
@@ -517,25 +516,38 @@ section {
   border: 1px solid var(--secondary-color);
   display: inline-flex;
   align-items: center;
-  align-self: flex-start;
   overflow: hidden;
   padding: 0;
+  transition: all 0.4s ease-in-out;
+  background-color: inherit;
+
   .btn-text {
     padding: 0 1rem;
-  }
-  .btn-container {
-    display: flex;
-    align-self: flex-start;
+    transition: color 0.4s ease-in-out;
   }
   .btn-icon {
     background-color: var(--secondary-color);
-
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
     border-radius: 50%;
     padding: 0.5rem;
     margin-left: 0.5rem;
+    transition: background-color 0.4s, transform 0.4s;
+  }
+  &:hover {
+    background-color: var(--secondary-color);
+    color: var(--color-black);
+    .btn-icon {
+      background-color: var(--color-white);
+      transform: scale(1.1);
+      i {
+        color: var(--secondary-color);
+      }
+    }
+    .btn-text {
+      color: var(--color-black);
+    }
   }
   &::before {
     content: "";
@@ -641,13 +653,17 @@ section {
           padding: 0 !important;
         }
         .icon {
-          display: grid;
-          grid-template-columns: repeat(40px, 1fr);
+          display: flex;
+          align-items: center;
+          gap: 0.5rem; // space between icon and label
           i {
             font-size: 1.3rem;
             display: flex;
             align-items: center;
           }
+        }
+        .value {
+          white-space: nowrap; // prevents New York, NY from wrapping
         }
       }
       .contact-icon {
