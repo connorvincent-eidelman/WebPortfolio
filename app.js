@@ -58,7 +58,7 @@ document.getElementById("contact-form").addEventListener("submit", function(e) {
   e.preventDefault(); // stop normal form submit
   const formMessage = document.getElementById("form-message");
 
-  emailjs.sendForm("service_34i2irr", "template_harhkoi", this, "Rdwvcw20k9MUhXoj-")
+  emailjs.sendForm("service_zbacvbc", "template_harhkoi", this, "Rdwvcw20k9MUhXoj-")
     .then(() => {
       formMessage.textContent = "✅ Message sent successfully!";
       formMessage.style.color = "limegreen";

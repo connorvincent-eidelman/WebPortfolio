@@ -768,4 +768,11 @@ section {
   }
 }
 
+#form-message {
+  margin-top: 1rem;
+  font-weight: 600;
+  text-align: left;
+  transition: opacity 0.3s ease-in-out;
+}
+
 @import "./media.scss";
