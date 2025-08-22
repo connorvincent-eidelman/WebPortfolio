@@ -572,7 +572,7 @@ section {
   display: grid;
   margin-top: 3rem;
   grid-gap: 2rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr) 1fr;
 
   .blog {
     box-shadow: var(--box-shadow-1);
@@ -580,6 +580,7 @@ section {
     border-radius: 5px;
     position: relative;
     background-color: var(--color-grey-4);
+
     &:hover {
       transform: translateY(-5px);
       box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.5);
@@ -622,6 +623,52 @@ section {
         transition: all 0.4s ease-in-out;
       }
     }
+
+    &.in-progress {
+      overflow: hidden;
+
+      .overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        font-size: 1.6rem;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease-in-out;
+      }
+
+      &:hover .overlay {
+        opacity: 1;
+        pointer-events: auto;
+      }
+    }
+  }
+
+  /* ✨ "More Coming Soon" */
+  .coming-soon {
+    grid-column: 2 span; // takes full row under blogs
+    align-self: center;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    animation: pulse 1.5s infinite;
+  }
+}
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
   }
 }
 
