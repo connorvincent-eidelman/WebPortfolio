@@ -157,14 +157,14 @@ section {
 
           height: 0.45rem;
           margin-left: 1rem;
-          background-color: var(--secondary-color);
+          background-color: var(--color-grey-4);
           transition: width 0.4s ease-in-out;
           span {
             position: absolute;
             top: 0;
             left: 0;
             height: 100%;
-            background-color: var(--color-grey-4);
+            background-color: var(--color-grey-2);
             border-radius: 5px;
 
             transition: width 0.4s ease-in-out;
