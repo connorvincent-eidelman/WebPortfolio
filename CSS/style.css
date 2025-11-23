@@ -58,7 +58,6 @@ section {
 .sec1 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: skyblue;
 }
 
 .sec2 {
@@ -344,7 +343,6 @@ section {
 .timeline .timeline-item {
   position: relative;
   padding-left: 3rem;
-  border-left: 1px solid var(--color-grey-4);
 }
 .timeline .timeline-item .tl-icon {
   position: absolute;
