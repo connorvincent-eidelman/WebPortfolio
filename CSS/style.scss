@@ -56,7 +56,6 @@ section {
 .sec1 {
   display: none;
   transform: translateY(0) scale(1);
-  
 }
 .sec2 {
   display: none;
@@ -301,6 +300,8 @@ section {
     flex-direction: column;
     justify-content: center;
 
+    padding: 0 2 rem;
+
     padding-right: 18rem;
     name {
       font-size: 3.5rem;
@@ -352,7 +353,7 @@ section {
   .timeline-item {
     position: relative;
     padding-left: 3rem;
-    
+
     .tl-icon {
       position: absolute;
       top: 0;
@@ -404,6 +405,7 @@ section {
 .port-text {
   padding: 3rem 0;
   text-align: center;
+  font-size: large;
 }
 
 .portfolios {
